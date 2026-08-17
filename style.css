@@ -477,7 +477,7 @@ body {
 }
 .reservation-form input,
 .reservation-form select,
-.reservation-form textarea {
+.reservation-form textarea{
     width: 100%;
     background: #222222;
     border: 1px solid #383838;
@@ -486,6 +486,11 @@ body {
     padding: 14px;
     font-size: 12px;
     font-family: "Poppins", sans-serif;
+}
+.reservation-form input::placeholder,
+.reservation-form textarea::placeholder {
+    color: white;
+   
 }
 .reservation-form input,
 .reservation-form select {
@@ -628,7 +633,7 @@ body {
         gap: 50px;
     }
     .about-content h3 {
-        margin-top: 8 0px;
+        margin-top: 80px;
        
     }
     .about-content h2 {
@@ -641,11 +646,16 @@ body {
     .image-small {
         height: 230px;
     }
+    .info-box i{
+        margin-top: 65px;
+    }
+    
+
 
     /* ================= GALLERY RESPONSIVE ================= */
     .section-heading p{
         font-size: 20px;
-        
+        margin-top: 30px;
     }
     .gallery-section {
         padding: 70px 5%;
@@ -663,6 +673,9 @@ body {
     .reservation-section {
         padding: 80px 5%;
     }
+    .reservation-heading p{
+        margin-top: 20px;
+    }
 
     .reservation-container {
         max-width: 800px;
@@ -678,6 +691,7 @@ body {
     }
 
     .contact-image {
+        margin-top: 20px;
         height: 450px;
     }
 
@@ -921,6 +935,7 @@ body {
         padding: 60px 20px;
     }
     .about-images {
+        margin-top: 40px;
         height: 280px;
     }
 
@@ -946,6 +961,7 @@ body {
     }
     /* ================= GALLERY RESPONSIVE ================= */
     .section-heading p{
+        margin-top: 30px;
         font-size: 18px;
         
     }
@@ -976,7 +992,9 @@ body {
         grid-template-columns: 1fr;
         gap: 12px;
     }
-
+    .reservation-heading p{
+        margin-top: 30px;
+    }
     .reservation-heading h2 {
         font-size: 38px;
     }
@@ -989,6 +1007,7 @@ body {
         padding: 60px 20px;
     }
      .contact-image {
+        margin-top: 20px;
         height: 300px;
     }
     .contact-info h2 {
