@@ -8,17 +8,19 @@ body {
     color: #ffffff;
     font-family: "Poppins", sans-serif;
 }
-.header{
-    position: absolute;
+.header {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 95px;
-    padding: 0 5%;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 10;
+    padding: 0 8%;
+    background: rgba(17, 17, 17, 0.75);
+    backdrop-filter: blur(12px);
+    z-index: 1;
 }
 .logo img {
     width: 230px;
@@ -298,7 +300,7 @@ body {
 /* ================= ABOUT ================= */
 
 .about-section{
-    padding: 100px 8%;
+    padding: 150px 8%;
 }
 .about-container{
     max-width: 1200px;
@@ -394,7 +396,7 @@ body {
 
 /* ================= GALLERY ================= */
 .gallery-section {
-    padding: 80px 8%;
+    padding: 120px 8%;
 }
 .section-heading p{
     font-size: 15px;
@@ -440,7 +442,7 @@ body {
 
 /* ================= RESERVATION ================= */
 .reservation-section {
-    padding: 90px 8%;
+    padding: 120px 8%;
 }
 .reservation-container {
     max-width: 900px;
@@ -465,6 +467,7 @@ body {
     background: #1a1a1a;
     border: 1px solid #292929;
     padding: 30px;
+    
 }
 .form-group {
     display: grid;
@@ -517,6 +520,65 @@ body {
 }
 
 /* ================= CONTACT ================= */
+.contact-section {
+    padding: 130px 8%;
+}
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+.contact-image {
+    height: 500px;
+}
+
+.contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contact-subtitle {
+    color: #d9a441;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+.contact-info h2 {
+    color: #ffffff;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.contact-box {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.contact-box i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1a1a1a;
+    border-radius: 50%;
+    color: #d9a441;
+    font-size: 18px;
+}
+.contact-box h3 {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contact-box p {
+    color: #aaaaaa;
+    font-size: 13px;
+}
 
 /*Responsive*/
 
@@ -560,13 +622,18 @@ body {
     }
     /* ================= ABOUT ================= */
     .about-section {
-        padding: 80px 5%;
+        padding: 120px 5%;
     }
     .about-container {
         gap: 50px;
     }
+    .about-content h3 {
+        margin-top: 8 0px;
+       
+    }
     .about-content h2 {
-        font-size: 40px;
+        font-size: 30px;
+        line-height: 1.4;
     }
     .image-large {
         height: 480px;
@@ -600,7 +667,23 @@ body {
     .reservation-container {
         max-width: 800px;
     }
-   
+    
+    /*-------------CONTACT--------------*/
+    .contact-section {
+        padding: 80px 5%;
+    }
+
+    .contact-container {
+        gap: 50px;
+    }
+
+    .contact-image {
+        height: 450px;
+    }
+
+    .contact-info h2 {
+        font-size: 44px;
+    }
 
 }
 @media (max-width: 768px) {
@@ -705,8 +788,15 @@ body {
         justify-content: center;
     }
 
-    /* ================= GALLERY RESPONSIVE ================= */
+    /* ================= CONTACT ================= */
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
 
+    .contact-image {
+        height: 400px;
+    }
      
 
 }
@@ -893,5 +983,23 @@ body {
 
     .reservation-btn-box button {
         width: 100%;
+    }
+    /*------------------CONTACT-----------------*/
+    .contact-section {
+        padding: 60px 20px;
+    }
+     .contact-image {
+        height: 300px;
+    }
+    .contact-info h2 {
+        font-size: 40px;
+    }
+    .contact-box {
+        gap: 12px;
+    }
+
+    .contact-box i {
+        min-width: 45px;
+        height: 45px;
     }
 }
